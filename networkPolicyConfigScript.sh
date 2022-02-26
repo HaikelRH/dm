@@ -50,7 +50,7 @@ spec:
     - from:
         - namespaceSelector:
             matchLabels:
-              project: test2
+              name: test2
           podSelector:
             matchLabels:
               deployment: whitelisted
