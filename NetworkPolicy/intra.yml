@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: intraprojectpolicy
+spec:
+  podSelector:
+    matchLabels:
+      deployment: app1
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              deployment: app2
+      ports:
+        - port: 8443
+        - port: 8080
