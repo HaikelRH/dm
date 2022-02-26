@@ -2,6 +2,8 @@
 
 
 oc new-project test2
+oc label namespace test2 name=test2
+
 
 oc new-app --name whitelisted httpd
 oc new-app --name blacklisted httpd
