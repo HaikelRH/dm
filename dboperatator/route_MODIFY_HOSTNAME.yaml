@@ -1,0 +1,13 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: books
+spec:
+  host: books-stcproject.apps.ocp4.example.com
+  port:
+    targetPort: 8080
+  to:
+    kind: Service
+    name: books
+    weight: 100
+  wildcardPolicy: None
