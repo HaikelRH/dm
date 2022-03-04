@@ -24,7 +24,7 @@ spec:
               port: 8080
           env:
             - name: DB_HOST
-              value: database.console-apps.svc.cluster.local
+              value: database
             - name: DB_PORT
               value: '5432'
             - name: DB_USER
