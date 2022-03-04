@@ -1,3 +1,8 @@
+Create a postgress database from redhat template / ephemeral
+- SERVICE NAME: database
+- USERNAME: postgres
+- PASSWORD: postgres
+
 psql -U postgres -W postgres
 
 (pwd: postgres)
@@ -13,3 +18,17 @@ INSERT INTO book(id, title, author, year) VALUES (17, 'book3', 'Zoro',2022);
 INSERT INTO book(id, title, author, year) VALUES (18, 'book1', 'Zoro',2022);
 INSERT INTO book(id, title, author, year) VALUES (19, 'book2', 'Zoro',2022);
 INSERT INTO book(id, title, author, year) VALUES (17, 'book3', 'Zoro',2022);
+
+
+
+\l
+ List of databases
+
+\dt
+ List tables
+
+ \c testdb;
+connect/select a desired database; here, we will connect to the testdb database.
+
+
+
