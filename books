@@ -15,7 +15,7 @@ spec:
   spec:
     containers:
       - name: books
-        image: 'quay.io/redhattraining/books:v0.9'
+        image: 'quay.io/redhattraining/books:v1.4'
         ports:
           - containerPort: 8080
             protocol: TCP
