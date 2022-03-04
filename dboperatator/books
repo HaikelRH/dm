@@ -1,8 +1,7 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-name: books
-  namespace: console-apps
+  name: books
 spec:
   selector:
     matchLabels:
@@ -39,7 +38,6 @@ kind: Service
 apiVersion: v1
 metadata:
   name: books
-    namespace: console-apps
 spec:
   selector:
     app: books
