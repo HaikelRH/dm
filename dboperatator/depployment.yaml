@@ -33,15 +33,3 @@ spec:
               value: postgres
             - name: DB_NAME
               value: postgres
-
-kind: Service
-apiVersion: v1
-metadata:
-  name: books
-spec:
-  selector:
-    app: books
-  ports:
-    - protocol: TCP
-      port: 8080
-      targetPort: 8080
