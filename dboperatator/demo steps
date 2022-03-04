@@ -1,0 +1,15 @@
+psql -U postgres -W postgres
+
+(pwd: postgres)
+
+SELECT * from book;
+
+
+INSERT INTO book(id, title, author, year) VALUES (15, 'book1', 'Zoro',2022);
+INSERT INTO book(id, title, author, year) VALUES (16, 'book2', 'Zoro',2022);
+INSERT INTO book(id, title, author, year) VALUES (17, 'book3', 'Zoro',2022);
+
+
+INSERT INTO book(id, title, author, year) VALUES (18, 'book1', 'Zoro',2022);
+INSERT INTO book(id, title, author, year) VALUES (19, 'book2', 'Zoro',2022);
+INSERT INTO book(id, title, author, year) VALUES (17, 'book3', 'Zoro',2022);
