@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: blue
+  name: blue
+  namespace: advanceddeployment
+spec:
+  host: blue-advanceddeployment.apps.ocp4.example.com
+  port:
+    targetPort: 8080-tcp
+  to:
+    kind: Service
+    name: green 
+    weight: 100
+  wildcardPolicy: None
+  alternateBackends:
+  - kind: Service
+    name: blue
+    weight: 20
